@@ -46,16 +46,18 @@ body {
 .main {
     max-width: 700px;
     margin: auto auto;
-    background-color: hsl(0, 0%, 100%);
+    background-color: hsl(0, 0%, 97%);
 }
 
 /* Welcome */
 
 .welcome {
-    position: relative;
+    margin-bottom: 20px;
     padding: 30px;
     padding-top: 0px;
     text-align: center;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 5px;
 }
 
 .welcome__image {
