@@ -174,3 +174,77 @@ body {
     color: hsl(0, 0%, 48%);
 }
 
+/* Reward */
+
+.reward {
+    margin-top: 20px;
+    padding: 30px;
+    border: 1px solid hsl(0, 0%, 80%);
+    border-radius: 5px;
+}
+
+.reward--out {
+    opacity: 0.5;
+}
+
+.reward__heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.reward__title {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.reward__type {
+    color: hsl(176, 50%, 47%);
+}
+
+.reward__content {
+    margin: 20px 0;
+    line-height: 1.5;
+    color: hsl(0, 0%, 48%);
+}
+
+.reward__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.reward__left {
+    display: flex;
+    align-items: center;
+}
+
+.reward__value {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.reward__label {
+    margin-left: 5px;
+    font-size: 14px;
+    color: hsl(0, 0%, 48%);
+}
+
+.reward__select {
+    padding: 13px 25px;
+    border-radius: 25px;
+    border: 0;
+}
+
+.reward__select--able {
+    background-color: hsl(176, 50%, 47%);
+    color: hsl(0, 0%, 100%);
+    font-weight: bold;
+}
+
+.reward__select--out {
+    background-color: hsl(0, 0%, 48%);
+    color: hsl(0, 0%, 100%);
+    font-weight: bold;
+    padding: 13px 30px;
+}
