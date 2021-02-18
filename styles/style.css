@@ -154,3 +154,23 @@ body {
     background-color: hsl(176, 50%, 47%);
     border-radius: 10px;
 }
+
+/* About */
+
+.about {
+    padding: 30px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 5px;
+}
+
+.about__title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.about__desc {
+    margin-top: 30px;
+    line-height: 1.5;
+    color: hsl(0, 0%, 48%);
+}
+
