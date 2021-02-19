@@ -277,3 +277,32 @@ body {
     font-weight: bold;
     padding: 13px 30px;
 }
+
+/* Modal */
+
+.modal {
+    padding: 30px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    border: 1px solid hsl(0, 0%, 90%);
+}
+
+.modal__heading {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.modal__close {
+    cursor: pointer;
+}
+
+.modal__title {
+    margin: 10px 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.modal__desc {
+    margin: 20px 0;
+    color: hsl(0, 0%, 48%);
+}
