@@ -92,11 +92,16 @@ body {
     border: 0;
     border-radius: 30px;
     cursor: pointer;
+    transition: all 200ms ease-out;
 }
 
 .welcome__action--green {
     color: hsl(0, 0%, 100%);
     background-color: hsl(176, 50%, 47%);
+}
+
+.welcome__action--green:hover {
+    background-color: hsl(176, 72%, 28%);
 }
 
 .welcome__action--gray {
@@ -242,12 +247,18 @@ body {
     padding: 13px 25px;
     border-radius: 25px;
     border: 0;
+    cursor: pointer;
+    transition: all 200ms ease-out;
 }
 
 .reward__select--able {
     background-color: hsl(176, 50%, 47%);
     color: hsl(0, 0%, 100%);
     font-weight: bold;
+}
+
+.reward__select--able:hover {
+    background-color: hsl(176, 72%, 28%);
 }
 
 .reward__select--out {
