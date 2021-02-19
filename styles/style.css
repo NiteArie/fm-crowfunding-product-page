@@ -310,12 +310,14 @@ body {
 /* Pledge */
 
 .pledge {
-    border-radius: 5px;
+    margin: 25px 0;
     border: 1px solid hsl(0, 0%, 80%);
+    border-radius: 5px;
 }
 
 .pledge__header {
     padding: 30px;
+    padding-bottom: 10px;
     display: flex;
 }
 
@@ -394,3 +396,39 @@ body {
     line-height: 1.5;
 }
 
+.pledge__footer {
+    padding: 20px 30px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid hsl(0, 0%, 80%);
+}
+
+.pledge__guide {
+    color: hsl(0, 0%, 48%);
+}
+
+.pledge__actions {
+    display: flex;
+}
+
+.pledge__money {
+    width: 100px;
+    padding: 15px;
+    border:1px solid hsl(176, 50%, 47%);
+    border-radius: 30px;
+}
+
+.pledge__submit {
+    margin-left: 15px;
+}
+
+.pledge__submit {
+    padding: 15px 20px;
+    color: white;
+    font-weight: bold;
+    background-color: hsl(176, 72%, 28%);
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
