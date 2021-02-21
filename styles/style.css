@@ -315,6 +315,10 @@ body {
     border-radius: 5px;
 }
 
+.pledge--out {
+    opacity: 0.5;
+}
+
 .pledge__header {
     padding: 30px;
     padding-bottom: 10px;
@@ -415,7 +419,13 @@ body {
 .pledge__money {
     width: 100px;
     padding: 15px;
-    border:1px solid hsl(176, 50%, 47%);
+    padding-left: 30px;
+    font-weight: bold;
+    background-image: url("../images/dollar-sign.svg");
+    background-repeat: no-repeat;
+    background-position: 10% 47%;
+    background-size: 15%;
+    border: 1px solid hsl(176, 50%, 47%);
     border-radius: 30px;
 }
 
