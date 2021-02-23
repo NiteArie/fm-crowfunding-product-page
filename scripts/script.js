@@ -8,6 +8,7 @@
     const pledges = Array.from(document.querySelectorAll(".js-pledge"));
 
     const checkBoxElements = Array.from(document.querySelectorAll(".js-check"));
+    const checkboxFooterElements = Array.from(document.querySelectorAll(".js-pledge-footer"));
 
     var bookmarked = false;
     var modalHiddenState = true;
@@ -37,10 +38,15 @@
         pledge.addEventListener("click", function (event) {
 
             clearCheckboxElements();
+            clearCheckboxFooterElements();
 
             let checkBoxElement = this.querySelector(".js-check");
 
             checkBoxElement.checked = true;
+
+            let checkBoxFooter = this.querySelector(".js-pledge-footer");
+
+            checkBoxFooter.classList.remove("pledge__footer--hidden");
         })
     })
 
@@ -65,10 +71,14 @@
     }
 
     function clearCheckboxElements() {
-        console.log(checkBoxElements);
         checkBoxElements.forEach(checkBox => {
-            console.log(123);
             checkBox.checked = false;
+        })
+    }
+
+    function clearCheckboxFooterElements() {
+        checkboxFooterElements.forEach((checkboxFooter) => {
+            checkboxFooter.classList.add("pledge__footer--hidden");
         })
     }
 })();
