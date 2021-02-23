@@ -408,6 +408,10 @@ body {
     border-top: 1px solid hsl(0, 0%, 80%);
 }
 
+.pledge__footer--hidden {
+    display: none;
+}
+
 .pledge__guide {
     color: hsl(0, 0%, 48%);
 }
@@ -415,6 +419,7 @@ body {
 .pledge__actions {
     display: flex;
 }
+
 
 .pledge__money {
     width: 100px;
