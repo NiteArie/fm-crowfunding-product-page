@@ -5,6 +5,9 @@
 
     const modal = document.querySelector(".js-modal");
     const modalBackground = document.querySelector(".js-modal-bg");
+    const pledges = Array.from(document.querySelectorAll(".js-pledge"));
+
+    const checkBoxElements = Array.from(document.querySelectorAll(".js-check"));
 
     var bookmarked = false;
     var modalHiddenState = true;
@@ -30,6 +33,17 @@
         }
     });
 
+    pledges.forEach((pledge) => {
+        pledge.addEventListener("click", function (event) {
+
+            clearCheckboxElements();
+
+            let checkBoxElement = this.querySelector(".js-check");
+
+            checkBoxElement.checked = true;
+        })
+    })
+
     function changeBookmarkButtonToSuccess() {
         bookmarkProjectButton.classList.add("welcome__action--bookmarked");
         bookmarkProjectImage.classList.add("welcome__bookmark--bookmarked");
@@ -41,7 +55,6 @@
     }
 
     function showModal() {
-        console.log("WTF");
         modal.classList.remove("modal--hidden");
         modalBackground.classList.remove("background--hidden");
     }
@@ -49,5 +62,13 @@
     function hideModal() {
         modal.classList.add("modal--hidden");
         modalBackground.classList.add("background--hidden");
+    }
+
+    function clearCheckboxElements() {
+        console.log(checkBoxElements);
+        checkBoxElements.forEach(checkBox => {
+            console.log(123);
+            checkBox.checked = false;
+        })
     }
 })();
