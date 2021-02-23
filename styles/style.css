@@ -281,13 +281,20 @@ body {
 /* Modal */
 
 .modal {
+    position: absolute;
+    top: 0;
     padding: 30px;
     background-color: hsl(0, 0%, 100%);
     border-radius: 10px;
     border: 1px solid hsl(0, 0%, 90%);
+    z-index: 4;
 }
 
-.modal__background {
+.modal--hidden {
+    display: none;
+}
+
+.background {
     position: fixed;
     top: 0;
     left: 0;
@@ -296,7 +303,7 @@ body {
     background-color: hsla(0, 0%, 0%, 0.3);
 }
 
-.modal__background--hidden {
+.background--hidden {
     display: none;
 }
 
