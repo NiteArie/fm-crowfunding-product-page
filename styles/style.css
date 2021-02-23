@@ -287,6 +287,19 @@ body {
     border: 1px solid hsl(0, 0%, 90%);
 }
 
+.modal__background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: hsla(0, 0%, 0%, 0.3);
+}
+
+.modal__background--hidden {
+    display: none;
+}
+
 .modal__heading {
     display: flex;
     justify-content: flex-end;
