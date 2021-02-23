@@ -4,6 +4,7 @@
     const bookmarkProjectImage = document.querySelector(".js-bookmark-img");
 
     const modal = document.querySelector(".js-modal");
+    const closeModalButtonElement = document.querySelector(".js-modal-close")
     const modalBackground = document.querySelector(".js-modal-bg");
     const pledges = Array.from(document.querySelectorAll(".js-pledge"));
 
@@ -25,14 +26,15 @@
     })
 
     backProjectButton.addEventListener("click", (event) => {
-        modalHiddenState = !modalHiddenState;
-
-        if ( !modalHiddenState ) {
-            showModal();
-        } else {
-            hideModal();
-        }
+        modalHiddenState = true;
+        showModal();
     });
+
+    closeModalButtonElement.addEventListener("click", (event) => {
+        hideModal();
+
+        modalHiddenState = true;
+    })
 
     pledges.forEach((pledge) => {
         pledge.addEventListener("click", function (event) {
