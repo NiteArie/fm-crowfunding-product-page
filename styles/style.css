@@ -522,6 +522,20 @@ body {
         margin: 20px;
     }
 
+    /* Welcome */
+    
+    .welcome__action--gray {
+        padding: 0;
+    }
+
+    .welcome__bookmark-title {
+        display: none;
+    }
+
+    .welcome__bookmark {
+        position: static;
+    }
+
     /* Stat */
 
     .stat__info {
@@ -550,7 +564,7 @@ body {
         background-color: hsl(0, 0%, 80%);
     }
 
-    /* Pledge */
+    /* Reward */
 
     .reward__heading {
         flex-direction: column;
@@ -568,6 +582,12 @@ body {
 
     .reward__left {
         margin-bottom: 25px;
+    }
+
+    /* Appre */
+
+    .appre {
+        top: -100px;
     }
 }
 
