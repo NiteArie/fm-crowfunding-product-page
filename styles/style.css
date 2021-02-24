@@ -341,6 +341,10 @@ body {
     border-radius: 5px;
 }
 
+.pledge--active {
+    border: 2px solid hsl(176, 72%, 28%);
+}
+
 .pledge--out {
     opacity: 0.5;
 }

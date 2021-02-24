@@ -41,12 +41,15 @@
     pledges.forEach((pledge) => {
         pledge.addEventListener("click", function (event) {
 
+            clearPledgeBorder();
             clearCheckboxElements();
             clearCheckboxFooterElements();
 
             let checkBoxElement = this.querySelector(".js-check");
 
             checkBoxElement.checked = true;
+
+            pledge.classList.add("pledge--active");
 
             let checkBoxFooter = this.querySelector(".js-pledge-footer");
 
@@ -100,6 +103,12 @@
     function clearCheckboxElements() {
         checkBoxElements.forEach(checkBox => {
             checkBox.checked = false;
+        })
+    }
+
+    function clearPledgeBorder() {
+        pledges.forEach((pledge) => {
+            pledge.classList.remove("pledge--active");
         })
     }
 
