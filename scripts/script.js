@@ -10,9 +10,12 @@
 
     const checkBoxElements = Array.from(document.querySelectorAll(".js-check"));
     const checkboxFooterElements = Array.from(document.querySelectorAll(".js-pledge-footer"));
+    const submitPledgeFormElements = Array.from(document.querySelectorAll(".js-pledge-actions"));
+
+    const appreModal = document.querySelector(".js-appre");
+    const appreSubmitElement = document.querySelector(".js-appre-done");
 
     var bookmarked = false;
-    var modalHiddenState = true;
 
     bookmarkProjectButton.addEventListener("click", (event) => {
 
@@ -26,14 +29,13 @@
     })
 
     backProjectButton.addEventListener("click", (event) => {
-        modalHiddenState = true;
         showModal();
+        showModalBackground();
     });
 
     closeModalButtonElement.addEventListener("click", (event) => {
         hideModal();
-
-        modalHiddenState = true;
+        hideModalBackground();
     })
 
     pledges.forEach((pledge) => {
@@ -52,6 +54,23 @@
         })
     })
 
+    submitPledgeFormElements.forEach((submitPledgeFormElement) => {
+        submitPledgeFormElement.addEventListener("submit", (event) => {
+
+            event.preventDefault();
+
+            hideModal();
+            showModalBackground();
+    
+            showAppreModal();
+        })  
+    })
+
+    appreSubmitElement.addEventListener("click", (event) => {
+        hideModalBackground();
+        hideAppreModal();
+    })
+
     function changeBookmarkButtonToSuccess() {
         bookmarkProjectButton.classList.add("welcome__action--bookmarked");
         bookmarkProjectImage.classList.add("welcome__bookmark--bookmarked");
@@ -64,11 +83,17 @@
 
     function showModal() {
         modal.classList.remove("modal--hidden");
+    }
+    
+    function hideModal() {
+        modal.classList.add("modal--hidden");
+    }
+    
+    function showModalBackground() {
         modalBackground.classList.remove("background--hidden");
     }
 
-    function hideModal() {
-        modal.classList.add("modal--hidden");
+    function hideModalBackground() {
         modalBackground.classList.add("background--hidden");
     }
 
@@ -82,5 +107,13 @@
         checkboxFooterElements.forEach((checkboxFooter) => {
             checkboxFooter.classList.add("pledge__footer--hidden");
         })
+    }
+
+    function showAppreModal() {
+        appreModal.classList.remove("appre--hidden");
+    }
+
+    function hideAppreModal() {
+        appreModal.classList.add("appre--hidden");
     }
 })();
