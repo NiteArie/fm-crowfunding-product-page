@@ -223,6 +223,7 @@ body {
 
 .reward__type {
     color: hsl(176, 50%, 47%);
+    font-weight: bold;
 }
 
 .reward__content {
@@ -512,5 +513,61 @@ body {
     border: 0;
     border-radius: 30px;
     cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    /* Main */
+
+    .main {
+        margin: 20px;
+    }
+
+    /* Stat */
+
+    .stat__info {
+        display: block;
+        text-align: center;
+    }
+
+    .stat__category {
+        margin-bottom: 20px;
+    }
+
+    .stat__category:nth-child(n + 2) {
+        position: relative;
+        padding-top: 20px;
+        padding-left: 0;
+        border-left: 0;
+    }
+
+    .stat__category:nth-child(n+2)::before {
+        content: "";
+        position: absolute;
+        top: 0px;
+        transform: translateX(-25px);
+        width: 50px;
+        height: 1px;
+        background-color: hsl(0, 0%, 80%);
+    }
+
+    /* Pledge */
+
+    .reward__heading {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .reward__type {
+        margin-top: 10px;
+    }
+
+    .reward__footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .reward__left {
+        margin-bottom: 25px;
+    }
 }
 
