@@ -191,10 +191,10 @@
             <p class="pledge__guide">
               Enter your pledge
             </p>
-            <div class="pledge__actions">
-              <input class="pledge__money" type="text">
-              <button class="pledge__submit">Continue</button>
-            </div>
+            <form class="pledge__actions">
+              <input class="pledge__money" type="text" min="0" required>
+              <button class="pledge__submit js-pledge-submit">Continue</button>
+            </form>
           </div>
         </section>
 
@@ -226,10 +226,10 @@
             <p class="pledge__guide">
               Enter your pledge
             </p>
-            <div class="pledge__actions">
-              <input class="pledge__money" type="text">
-              <button class="pledge__submit">Continue</button>
-            </div>
+            <form class="pledge__actions">
+              <input class="pledge__money" type="number" min="25" required>
+              <button class="pledge__submit js-pledge-submit">Continue</button>
+            </form>
           </div>
         </section>
         <section class="pledge js-pledge">
@@ -260,10 +260,10 @@
             <p class="pledge__guide">
               Enter your pledge
             </p>
-            <div class="pledge__actions">
-              <input class="pledge__money" type="text">
-              <button class="pledge__submit">Continue</button>
-            </div>
+            <form class="pledge__actions">
+              <input class="pledge__money" type="number" min="75" required>
+              <button class="pledge__submit js-pledge-submit">Continue</button>
+            </form>
           </div>
         </section>
         <section class="pledge pledge--out">
