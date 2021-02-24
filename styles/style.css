@@ -294,6 +294,8 @@ body {
     display: none;
 }
 
+/* Background */
+
 .background {
     position: fixed;
     top: 0;
@@ -306,6 +308,8 @@ body {
 .background--hidden {
     display: none;
 }
+
+/* Modal */
 
 .modal__heading {
     display: flex;
@@ -463,6 +467,40 @@ body {
     color: white;
     font-weight: bold;
     background-color: hsl(176, 72%, 28%);
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+/* Appre */
+
+.appre {
+    max-width: 500px;
+    margin: auto auto;
+    padding: 30px;
+    text-align: center;
+    background-color: hsl(0, 0%, 100%);
+    border: 1px solid hsl(0, 0%, 90%);
+    border-radius: 10px;
+}
+
+.appre__title {
+    margin: 25px 0 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.appre__content {
+    margin: 15px 0;
+    color: hsl(0, 0%, 48%);
+    line-height: 1.5;
+}
+
+.appre__done {
+    padding: 12px 25px;
+    color:hsl(0, 0%, 100%);
+    font-weight: bold;
+    background-color: hsl(176, 50%, 47%);
     border: 0;
     border-radius: 30px;
     cursor: pointer;
