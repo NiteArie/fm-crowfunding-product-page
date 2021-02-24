@@ -330,6 +330,7 @@ body {
 .modal__desc {
     margin: 20px 0;
     color: hsl(0, 0%, 48%);
+    line-height: 1.5;
 }
 
 /* Pledge */
@@ -467,7 +468,7 @@ body {
     padding: 15px 20px;
     color: white;
     font-weight: bold;
-    background-color: hsl(176, 72%, 28%);
+    background-color: hsl(176, 50%, 47%);
     border: 0;
     border-radius: 30px;
     cursor: pointer;
@@ -588,6 +589,36 @@ body {
 
     .appre {
         top: -100px;
+    }
+
+    /* Pledge */
+
+    .pledge__content {
+        position: relative;
+        margin-bottom: 25px;
+    }
+
+    .pledge__info {
+        flex-direction: column;
+    }
+
+    .pledge__type {
+        margin-top: 10px;
+        margin-left: 0;
+    }
+
+    .pledge__left {
+        position: absolute;
+
+        bottom: -15px;
+    }
+
+    .pledge__footer {
+        flex-direction: column;
+    }
+
+    .pledge__guide {
+        margin-bottom: 20px;
     }
 }
 
