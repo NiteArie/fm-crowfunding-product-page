@@ -475,6 +475,10 @@ body {
 /* Appre */
 
 .appre {
+    position: absolute;
+    top: 200px;
+    left: 0;
+    right: 0;
     max-width: 500px;
     margin: auto auto;
     padding: 30px;
@@ -482,6 +486,10 @@ body {
     background-color: hsl(0, 0%, 100%);
     border: 1px solid hsl(0, 0%, 90%);
     border-radius: 10px;
+}
+
+.appre--hidden {
+    display: none;
 }
 
 .appre__title {
@@ -505,3 +513,4 @@ body {
     border-radius: 30px;
     cursor: pointer;
 }
+
