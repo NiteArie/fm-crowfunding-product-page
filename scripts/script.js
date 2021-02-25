@@ -15,7 +15,13 @@
     const appreModal = document.querySelector(".js-appre");
     const appreSubmitElement = document.querySelector(".js-appre-done");
 
+    const headerListElement = document.querySelector(".js-header-list");
+    const headerMenuLinkElement = document.querySelector(".js-header-menu-link");
+    const headerMenuIconElement = document.querySelector(".js-header-menu-icon");
+
     var bookmarked = false;
+
+    var headerMenuOpen = false;
 
     bookmarkProjectButton.addEventListener("click", (event) => {
 
@@ -74,6 +80,20 @@
         hideAppreModal();
     })
 
+    headerMenuLinkElement.addEventListener("click", function(event) {
+
+        headerMenuOpen = !headerMenuOpen;
+
+        if (headerMenuOpen) {
+            headerMenuIconElement.src = "../images/icon-close-menu.svg";
+            showHeaderListElement();
+        } else {
+            headerMenuIconElement.src = "../images/icon-hamburger.svg";
+            closeHeaderListElement();
+        }
+
+    })
+
     function changeBookmarkButtonToSuccess() {
         bookmarkProjectButton.classList.add("welcome__action--bookmarked");
         bookmarkProjectImage.classList.add("welcome__bookmark--bookmarked");
@@ -124,5 +144,13 @@
 
     function hideAppreModal() {
         appreModal.classList.add("appre--hidden");
+    }
+
+    function showHeaderListElement() {
+        headerListElement.classList.remove("header__list--hidden");
+    }
+
+    function closeHeaderListElement() {
+        headerListElement.classList.add("header__list--hidden");
     }
 })();

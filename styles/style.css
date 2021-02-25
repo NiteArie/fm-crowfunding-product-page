@@ -549,6 +549,10 @@ body {
         border-radius: 5px;
     }
 
+    .header__list.header__list--hidden {
+        display: none;
+    }
+
     .header__item {
         margin-left: 0;
     }
