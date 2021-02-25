@@ -41,6 +41,10 @@ body {
     font-size: 14px;
 }
 
+.header__menu {
+    display: none;
+}
+
 /* Main */
 
 .main {
@@ -77,6 +81,7 @@ body {
 .welcome__desc {
     margin: 20px 0;
     color: hsl(0, 0%, 48%);
+    line-height: 1.5;
 }
 
 .welcome__actions {
@@ -521,6 +526,46 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
+
+    /* Header */
+
+    .header {
+        position: relative;
+    }
+
+    .header__nav {
+        padding-left: 20px;
+        padding-right: 20px;
+    }   
+
+    .header__list {
+        margin: 0 20px;
+        position: absolute;
+        flex-direction: column;
+        top: 100px;
+        left: 0;
+        right: 0;
+        background-color: white;
+        border-radius: 5px;
+    }
+
+    .header__item {
+        margin-left: 0;
+    }
+
+    .header__link {
+        display: block;
+        padding: 20px;
+        font-size: 16px;
+        color: hsl(0, 0%, 0%);
+        border-bottom: 1px solid hsl(0, 0%, 80%);
+    }
+    
+
+    .header__menu {
+        display: block;
+    }
+
     /* Main */
 
     .main {
